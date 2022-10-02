@@ -1,6 +1,6 @@
 import * as React from "react";
 // import * as ReactDOM from "react-dom";
-import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import SecretHome from "./routes/SecretHome";
 import Ghost from "./routes/Ghost";
@@ -10,14 +10,14 @@ import Create from "./routes/Create";
 function App() {
   // return <SecretHome />;
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename="/React-Teamproject_WhaleSecret">
       <Routes>
         <Route path="/" element={<SecretHome />}></Route>
         <Route path="/ghost_page" element={<Ghost />}></Route>
         <Route path="/ghost_page/translate" element={<Translate />}></Route>
         <Route path="/ghost_page/create" element={<Create />}></Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
