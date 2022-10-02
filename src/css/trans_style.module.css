@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+* {
+  margin: 0 !important;
+  /* padding: 0 !important; */
+}
+
+.main_page {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(33, 33, 33);
+  font-family: "Nanum Gothic", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.descrip_div {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.story_des {
+  background-color: aqua;
+}
+
+.guide_des {
+  background-color: blue;
+}
+
+.ghost_whale_img {
+  width: 100px;
+  height: 100px;
+  padding: 20px 0;
+  filter: brightness(0) invert(1);
+  padding-bottom: 30px;
+  animation: move_whale 4s infinite linear;
+}
