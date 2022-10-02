@@ -12,8 +12,14 @@ function App() {
   return (
     <BrowserRouter basename="/React-Teamproject_WhaleSecret">
       <Routes>
-        <Route path="/" element={<SecretHome />}></Route>
-        <Route path="/ghost_page" element={<Ghost />}></Route>
+        <Route
+          path={process.env.PUBLIC_URL + "/"}
+          element={<SecretHome />}
+        ></Route>
+        <Route
+          path={process.env.PUBLIC_URL + "/ghost_page"}
+          element={<Ghost />}
+        ></Route>
         <Route path="/ghost_page/translate" element={<Translate />}></Route>
         <Route path="/ghost_page/create" element={<Create />}></Route>
       </Routes>
