@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+// import * as ReactDOM from "react-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import SecretHome from "./routes/SecretHome";
+import Ghost from "./routes/Ghost";
+import Translate from "./routes/Translate";
+import Create from "./routes/Create";
 
 function App() {
+  // return <SecretHome />;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<SecretHome />}></Route>
+        <Route path="/ghost_page" element={<Ghost />}></Route>
+        <Route path="/ghost_page/translate" element={<Translate />}></Route>
+        <Route path="/ghost_page/create" element={<Create />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
