@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+* {
+  margin: 0 !important;
+  /* padding: 0 !important; */
+}
+
+.main_page {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(33, 33, 33);
+  font-family: "Nanum Gothic", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ghost_story_des {
+  background-color: white;
+  border-radius: 10px;
+  color: rgb(33, 33, 33);
+  padding: 50px;
+}
+
+.ghost_whale_img {
+  width: 100px;
+  height: 100px;
+  padding: 20px 0;
+  filter: brightness(0) invert(1);
+  padding-bottom: 30px;
+  animation: move_whale 4s infinite linear;
+}
+
+.ghost_btns {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+@keyframes move_whale {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-4px);
+  }
+  85% {
+    transform: translateY(2px);
+  }
+}
