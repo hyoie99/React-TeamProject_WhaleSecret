@@ -10,7 +10,7 @@ import Create from "./routes/Create";
 function App() {
   // return <SecretHome />;
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<SecretHome />}></Route>
         <Route path="/ghost_page" element={<Ghost />}></Route>
