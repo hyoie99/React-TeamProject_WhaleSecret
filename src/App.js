@@ -10,7 +10,8 @@ import Create from "./routes/Create";
 function App() {
   // return <SecretHome />;
   return (
-    <BrowserRouter basename="/React-Teamproject_WhaleSecret">
+    // <BrowserRouter basename="/React-Teamproject_WhaleSecret">
+    <BrowserRouter>
       <Routes>
         <Route
           path={process.env.PUBLIC_URL + "/"}
