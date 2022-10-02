@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+* {
+  margin: 0 !important;
+  /* padding: 0 !important; */
+}
+
+.main_page {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Nanum Gothic", sans-serif;
+  background-color: rgb(33, 33, 33);
+}
+
+.main_div {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+}
+
+.main_whale {
+  position: relative;
+  /* width: 100%; */
+}
+
+.main_whale_img {
+  width: 100px;
+  height: 100px;
+  filter: brightness(0) invert(1);
+  padding-bottom: 30px;
+  animation: move_whale 4s infinite linear;
+}
+
+.main_title {
+  font-size: 35px;
+  padding-bottom: 30px;
+}
+
+.first_hidden {
+  visibility: hidden;
+  width: 200px;
+  position: absolute;
+  top: 15px;
+  left: 140px;
+}
+
+.next_hidden {
+  opacity: 0;
+  width: 200px;
+  position: absolute;
+  top: 15px;
+  left: 140px;
+  animation: hide_bubble 0.5s linear;
+}
+
+.main_whale_bubble {
+  /* opacity: 0; */
+  width: 200px;
+  position: absolute;
+  top: 15px;
+  left: 140px;
+  animation: show_bubble 0.5s linear, move_whale 4s infinite linear;
+}
+
+.main_whale_bubble_text {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(33, 33, 33);
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+.main_whale_bubble_text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  border: 10px solid transparent;
+  border-right: 10px solid white;
+  border-bottom: 10px solid white;
+}
+
+.main_description {
+  width: 650px;
+  text-align: center;
+  color: rgb(180, 180, 180);
+  padding-bottom: 50px;
+  line-height: 180%;
+}
+
+.main_infos {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+
+  width: 650px;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.main_info {
+  padding: 20px 60px 20px 0;
+}
+.main_info_title {
+  padding-bottom: 15px;
+}
+.main_info_des {
+  color: rgb(180, 180, 180);
+}
+
+@keyframes move_whale {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-4px);
+  }
+  85% {
+    transform: translateY(2px);
+  }
+}
+
+@keyframes show_bubble {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hide_bubble {
+  from {
+    opacity: 1;
+  }
+  /* 50% {
+    opacity: 1;
+  } */
+  to {
+    opacity: 0;
+  }
+}
