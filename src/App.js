@@ -10,17 +10,11 @@ import Create from "./routes/Create";
 function App() {
   // return <SecretHome />;
   return (
-    // <BrowserRouter basename="/React-Teamproject_WhaleSecret">
-    <BrowserRouter>
+    <BrowserRouter basename="/React-Teamproject_WhaleSecret">
+      {/* <BrowserRouter> */}
       <Routes>
-        <Route
-          path={process.env.PUBLIC_URL + "/"}
-          element={<SecretHome />}
-        ></Route>
-        <Route
-          path={process.env.PUBLIC_URL + "/ghost_page"}
-          element={<Ghost />}
-        ></Route>
+        <Route path="/" element={<SecretHome />}></Route>
+        <Route path="/ghost_page" element={<Ghost />}></Route>
         <Route path="/ghost_page/translate" element={<Translate />}></Route>
         <Route path="/ghost_page/create" element={<Create />}></Route>
       </Routes>

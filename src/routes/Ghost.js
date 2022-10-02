@@ -13,13 +13,10 @@ function Ghost() {
         src={require("../icon/main_whale.png")}
       />
       <div className={styles.ghost_btns}>
-        <Link
-          to="/ghost_page/translate"
-          basename="/React-Teamproject_WhaleSecret"
-        >
+        <Link to="/ghost_page/translate">
           <button>메시지 해석하기</button>
         </Link>
-        <Link basename="/React-Teamproject_WhaleSecret" to="/ghost_page/create">
+        <Link to="/ghost_page/create">
           <button>메시지 카드 만들기</button>
         </Link>
       </div>
