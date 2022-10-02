@@ -22,7 +22,11 @@ function SecretHome() {
               alt=""
               src={require("../icon/main_whale.png")}
             />
-            <Link to="/ghost_page" target="_blank">
+            <Link
+              basename="/React-Teamproject_WhaleSecret"
+              to="/ghost_page"
+              target="_blank"
+            >
               <div className={bubbleClassName}>
                 <span className={styles.main_whale_bubble_text}>
                   고민 있어?
