@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap");
+
+* {
+  margin: 0 !important;
+  /* padding: 0 !important; */
+}
+
+.main_page {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Nanum Gothic", sans-serif;
+  background-color: rgb(33, 33, 33);
+
+  display: flex;
+  justify-content: center;
+}
+
+.flex_div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main_whale_img {
+  width: 100px;
+  /* height: 100px; */
+  filter: brightness(0) invert(1);
+  padding: 30px 0;
+  animation: move_whale 4s infinite linear;
+}
+.main_whale_img2 {
+  width: 100px;
+}
+
+.whale_div {
+  /* background-color: aqua; */
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.whale_text {
+  position: relative;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+.whale_text::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border: 10px solid transparent;
+  border-top: 10px solid white;
+  /* border-bottom: 10px solid white; */
+}
+
+.card_btn_div {
+  /* background-color: yellow; */
+  height: 600px;
+  width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card_div {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  height: 500px;
+  width: 100%;
+
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.card_title {
+  font-size: 20px;
+}
+.card_text {
+  font-size: 25px;
+  font-family: "Black And White Picture", sans-serif;
+}
+
+.btns {
+  /* background-color: blue; */
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.btns_group1 {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@keyframes move_whale {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-4px);
+  }
+  85% {
+    transform: translateY(2px);
+  }
+}
