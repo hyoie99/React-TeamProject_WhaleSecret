@@ -20,22 +20,57 @@
 .descrip_div {
   display: flex;
   justify-content: center;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
+}
+
+.story_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 150px;
 }
 
 .story_des {
-  background-color: aqua;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  padding: 50px;
+}
+.story_des::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 43%;
+  border: 20px solid transparent;
+  border-top: 15px solid white;
+  /* border-bottom: 10px solid white; */
 }
 
 .guide_des {
-  background-color: blue;
+  background-color: white;
+  border-radius: 10px;
+  /* width: 200px; */
 }
 
 .ghost_whale_img {
   width: 100px;
   height: 100px;
-  padding: 20px 0;
+  padding: 50px 0 0px 0;
   filter: brightness(0) invert(1);
   padding-bottom: 30px;
   animation: move_whale 4s infinite linear;
+}
+
+@keyframes move_whale {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-4px);
+  }
+  85% {
+    transform: translateY(2px);
+  }
 }

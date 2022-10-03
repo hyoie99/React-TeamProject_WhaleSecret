@@ -1,12 +1,13 @@
+import { Link } from "react-router-dom";
 import styles from "../css/trans_style.module.css";
 
 function Translate() {
   return (
     <div className={styles.main_page}>
       <div className={styles.descrip_div}>
-        <div className={styles.story_des}>
-          <div>
-            <h1> 스토리 설명 </h1>
+        <div className={styles.story_div}>
+          <div className={styles.story_des}>
+            <h1> 메시지 해석 설명 </h1>
           </div>
           <img
             className={styles.ghost_whale_img}
@@ -19,8 +20,12 @@ function Translate() {
         </div>
       </div>
       <div>
-        <button>뒤로 가기</button>
-        <button>메시지 카드 만들기</button>
+        <Link to="/ghost_page">
+          <button>뒤로 가기</button>
+        </Link>
+        <Link to="/ghost_page/create">
+          <button>메시지 카드 만들기</button>
+        </Link>
       </div>
     </div>
   );
