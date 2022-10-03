@@ -1,12 +1,13 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import styles from "../css/loading_style.module.css";
 
 function Loading() {
   const navigate = useNavigate();
   const timeout = () => {
     setTimeout(() => {
       navigate("/ghost_page/result");
-    }, 2000);
+    }, 1500);
   };
 
   useEffect(() => {
@@ -16,7 +17,14 @@ function Loading() {
     };
   });
 
-  return <h1>변환 중</h1>;
+  return (
+    <div className={styles.main_page}>
+      <div>
+        <h1 className={styles.title}>LOADING</h1>
+        <div className={styles.circle}></div>
+      </div>
+    </div>
+  );
 }
 
 export default Loading;
