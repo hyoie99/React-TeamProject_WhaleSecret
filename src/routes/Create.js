@@ -6,9 +6,9 @@ import styles from "../css/create_style.module.css";
 function Create() {
   const [loading, setLoading] = useState(false);
 
-  const clickTrans = () => {
+  const clickTrans = (event) => {
+    event.preventDefault();
     setLoading(!loading);
-    console.log(loading);
   };
 
   return (
@@ -16,10 +16,10 @@ function Create() {
       {loading ? (
         <Loading />
       ) : (
-        <div className={styles.form_div}>
+        <form onSubmit={clickTrans} className={styles.form_div}>
           <CreateForm />
-          <button onClick={clickTrans}>변환</button>
-        </div>
+          <button>변환</button>
+        </form>
       )}
     </div>
   );

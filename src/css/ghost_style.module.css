@@ -26,7 +26,7 @@
 
 .ghost_whale_img {
   width: 100px;
-  height: 100px;
+  /* height: 100px; */
   padding: 20px 0;
   filter: brightness(0) invert(1);
   padding-bottom: 30px;
