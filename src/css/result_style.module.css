@@ -85,6 +85,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  animation: rotate_card 9s infinite linear;
 }
 .card_title {
   font-size: 20px;
@@ -92,6 +93,7 @@
 .card_text {
   font-size: 25px;
   font-family: "Black And White Picture", sans-serif;
+  user-select: none;
 }
 
 .btns {
@@ -120,5 +122,23 @@
   }
   85% {
     transform: translateY(2px);
+  }
+}
+
+@keyframes rotate_card {
+  0% {
+    transform: perspective(1440px) rotateY(15deg) rotateX(0);
+  }
+  25% {
+    transform: perspective(1440px) rotateY(0) rotateX(-15deg);
+  }
+  50% {
+    transform: perspective(1440px) rotateY(-15deg) rotateX(0);
+  }
+  75% {
+    transform: perspective(1440px) rotateY(0) rotateX(15deg);
+  }
+  100% {
+    transform: perspective(1440px) rotateY(15deg) rotateX(0);
   }
 }
