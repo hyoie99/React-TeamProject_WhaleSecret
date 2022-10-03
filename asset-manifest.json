@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/React-Teamproject_WhaleSecret/static/css/main.68e140d8.css",
-    "main.js": "/React-Teamproject_WhaleSecret/static/js/main.5e0a224d.js",
+    "main.css": "/React-Teamproject_WhaleSecret/static/css/main.43d3bb99.css",
+    "main.js": "/React-Teamproject_WhaleSecret/static/js/main.d755b2ca.js",
     "static/media/main_whale.png": "/React-Teamproject_WhaleSecret/static/media/main_whale.2e85e26e50363399489a.png",
     "index.html": "/React-Teamproject_WhaleSecret/index.html",
-    "main.68e140d8.css.map": "/React-Teamproject_WhaleSecret/static/css/main.68e140d8.css.map",
-    "main.5e0a224d.js.map": "/React-Teamproject_WhaleSecret/static/js/main.5e0a224d.js.map"
+    "main.43d3bb99.css.map": "/React-Teamproject_WhaleSecret/static/css/main.43d3bb99.css.map",
+    "main.d755b2ca.js.map": "/React-Teamproject_WhaleSecret/static/js/main.d755b2ca.js.map"
   },
   "entrypoints": [
-    "static/css/main.68e140d8.css",
-    "static/js/main.5e0a224d.js"
+    "static/css/main.43d3bb99.css",
+    "static/js/main.d755b2ca.js"
   ]
 }
