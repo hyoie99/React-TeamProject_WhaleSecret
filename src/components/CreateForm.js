@@ -1,16 +1,51 @@
+import { useState } from "react";
 import styles from "../css/createForm_style.module.css";
 
-function CreateForm() {
+function CreateForm({ getName, getText }) {
+  const [name, setName] = useState("");
+  const [text, setText] = useState("");
+
+  const inputName = (event) => {
+    setName(event.target.value);
+    // console.log(name);
+  };
+  const inputText = (event) => {
+    setText((text) => event.target.value);
+    // console.log(text);
+  };
+  getName(name);
+  getText(text);
+
   return (
     <div className={styles.main_page}>
       <div className={styles.main_div}>
         <div className={styles.input_div}>
           <h1 className={styles.input_title}>이름을 알려줘</h1>
-          <input required className={styles.name_input} type="text"></input>
+          <input
+            value={name}
+            onChange={inputName}
+            required
+            className={styles.name_input}
+            type="text"
+          ></input>
         </div>
         <div className={styles.input_div}>
           <h1 className={styles.input_title}>암호로 만들 텍스트를 알려줘</h1>
-          <input required className={styles.text_input} type="text"></input>
+          {/* <input
+            value={text}
+            onChange={inputText}
+            required
+            className={styles.text_input}
+            type="text"
+          ></input> */}
+          <textarea
+            value={text}
+            onChange={inputText}
+            required
+            className={styles.text_input}
+            placeholder="글자 수 제한 50"
+            maxLength="50"
+          ></textarea>
         </div>
         <div className={styles.guide_text}>
           이게 뭔지 설명하는 가이드 텍스트 들어갈 자리 근데 얼마나 길지 몰라서

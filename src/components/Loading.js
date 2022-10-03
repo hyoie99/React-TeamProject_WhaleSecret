@@ -2,13 +2,16 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "../css/loading_style.module.css";
 
-function Loading() {
+function Loading({ username, usertext }) {
   const navigate = useNavigate();
   const timeout = () => {
     setTimeout(() => {
-      navigate("/ghost_page/result");
+      navigate("/ghost_page/result", {
+        state: { username: { username }, usertext: { usertext } },
+      });
     }, 1500);
   };
+  // console.log(username, usertext);
 
   useEffect(() => {
     timeout();

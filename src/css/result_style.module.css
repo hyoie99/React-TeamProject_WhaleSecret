@@ -17,8 +17,9 @@
 }
 
 .flex_div {
-  width: 50%;
+  width: 60%;
   height: 100%;
+
   display: flex;
   /* flex-direction: column; */
   justify-content: space-around;
@@ -39,6 +40,7 @@
 .whale_div {
   /* background-color: aqua; */
   /* height: 100%; */
+  width: 400px;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
