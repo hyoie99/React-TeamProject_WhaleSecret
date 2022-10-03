@@ -1,5 +1,3 @@
-import domtoimage from "dom-to-image";
-import saveAs from "file-saver";
 import html2canvas from "html2canvas";
 import { Link, useLocation } from "react-router-dom";
 import styles from "../css/result_style.module.css";
@@ -8,7 +6,7 @@ function Result() {
   const location = useLocation();
   const username = location.state.username.username;
   const usertext = location.state.usertext.usertext;
-  // console.log(username, usertext);
+
   const saveFile = (url, filename) => {
     let link = document.createElement("a");
     link.href = url;
