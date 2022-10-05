@@ -10,7 +10,7 @@ function Ghost() {
       <img
         className={styles.ghost_whale_img}
         alt=""
-        src={require("../icon/main_whale.png")}
+        src={require("../Img/ghost_whale.png")}
       />
       <div className={styles.ghost_btns}>
         <Link to="/ghost_page/translate">

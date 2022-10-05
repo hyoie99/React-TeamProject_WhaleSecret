@@ -9,7 +9,9 @@
   width: 100vw;
   height: 100vh;
   font-family: "Nanum Gothic", sans-serif;
-  background-color: rgb(33, 33, 33);
+  /* background-color: rgb(33, 33, 33); */
+  background-color: black;
+  /* background-image: url("../Img/background.png"); */
 }
 
 .main_div {
@@ -31,7 +33,7 @@
 .main_whale_img {
   width: 100px;
   /* height: 100px; */
-  filter: brightness(0) invert(1);
+  /* filter: brightness(0) invert(1); */
   padding-bottom: 30px;
   animation: move_whale 4s infinite linear;
 }
