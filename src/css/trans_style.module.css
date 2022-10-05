@@ -1,15 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap");
 
-* {
-  margin: 0 !important;
-  /* padding: 0 !important; */
-}
-
-.main_page {
-  width: 100vw;
-  height: 100vh;
-  background-color: rgb(33, 33, 33);
-  font-family: "Nanum Gothic", sans-serif;
+.main_div {
+  width: 100%;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
@@ -17,49 +10,108 @@
   align-items: center;
 }
 
-.descrip_div {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 80px;
-}
-
-.story_div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-right: 150px;
-}
-
-.story_des {
+.guide_div {
   position: relative;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px 50px 150px 50px;
+  border: 1.5px solid #d9d9d9;
   border-radius: 10px;
-  padding: 50px;
 }
-.story_des::before {
+
+.guide_title {
+  font-size: 24px;
+  color: #d8d8d8;
+  /* padding-bottom: 20px; */
+}
+
+.guide_text {
+  font-size: 32px;
+  color: #d8d8d8;
+  /* padding-bottom: 20px; */
+  padding: 30px 0;
+  user-select: none;
+}
+
+.origin {
+  padding-left: 15px;
+}
+
+.trans {
+  font-family: "Black And White Picture", sans-serif;
+  padding-right: 15px;
+}
+
+.ghost_whale_text {
+  position: relative;
+  color: #d8d8d8;
+  text-align: center;
+  background-color: #202020;
+  border-radius: 10px;
+  border: 1.5px solid #d8d8d8;
+  padding: 20px 40px;
+  z-index: 2;
+}
+.ghost_whale_text::after {
+  content: "";
+  position: absolute;
+  top: 98%;
+  left: 43%;
+  border: 20px solid transparent;
+  border-top: 15px solid #202020;
+  z-index: 1;
+}
+.ghost_whale_text::before {
   content: "";
   position: absolute;
   top: 100%;
   left: 43%;
   border: 20px solid transparent;
-  border-top: 15px solid white;
-  /* border-bottom: 10px solid white; */
-}
-
-.guide_des {
-  background-color: white;
-  border-radius: 10px;
-  /* width: 200px; */
+  border-top: 15px solid #d8d8d8;
+  z-index: 0;
 }
 
 .ghost_whale_img {
-  width: 100px;
-  /* height: 100px; */
-  padding: 50px 0 0px 0;
-  filter: brightness(0) invert(1);
-  padding-bottom: 30px;
-  animation: move_whale 4s infinite linear;
+  width: 228px;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  /* margin-top: 50px; */
+}
+
+.btns_div {
+  /* background-color: blue; */
+  width: 33%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+.btn_back {
+  font-size: 20px;
+  font-weight: bold;
+  width: 200px;
+  background-color: transparent;
+  color: #d9d9d9;
+  border: 1px solid #d9d9d9;
+  border-radius: 25px;
+  padding: 10px;
+  cursor: pointer;
+}
+.btn_share {
+  font-size: 20px;
+  font-weight: bold;
+  width: 200px;
+  background-color: #d9d9d9;
+  color: #202020;
+  border: 1px solid #202020;
+  border-radius: 25px;
+  padding: 10px;
+  cursor: pointer;
 }
 
 @keyframes move_whale {
