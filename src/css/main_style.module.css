@@ -1,18 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
 
 * {
   margin: 0 !important;
-  /* padding: 0 !important; */
-}
+  /* padding: 0 !important; 
+} */
 
-.main_page {
+/* .main_page {
   width: 100vw;
   height: 100vh;
   font-family: "Nanum Gothic", sans-serif;
-  /* background-color: rgb(33, 33, 33); */
-  background-color: black;
-  /* background-image: url("../Img/background.png"); */
-}
+  background-color: rgb(33, 33, 33); */
+/* background-color: #000000; */
+/* background-image: url("../Img/background.png");
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: top center;
+} */
 
 .main_div {
   height: 100%;
@@ -32,8 +35,6 @@
 
 .main_whale_img {
   width: 100px;
-  /* height: 100px; */
-  /* filter: brightness(0) invert(1); */
   padding-bottom: 30px;
   animation: move_whale 4s infinite linear;
 }

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "../css/main_style.module.css";
+import bg from "../css/bg_style.module.css";
 
 function SecretHome() {
   const [bubble, setBubble] = useState(false);
@@ -13,7 +14,7 @@ function SecretHome() {
 
   return (
     <div className="App">
-      <div className={styles.main_page}>
+      <div className={bg.main_page}>
         <div className={styles.main_div}>
           <div className={styles.main_whale}>
             <img
