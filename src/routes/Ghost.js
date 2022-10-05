@@ -22,7 +22,7 @@ function Ghost() {
         <Link to="/ghost_page/translate">
           <button className={styles.btn_trans}>고스부호 해석하기</button>
         </Link>
-        <Link to="/ghost_page/create">
+        <Link to="/ghost_page/explain">
           <button className={styles.btn_make}>고스부호 만들기</button>
         </Link>
       </div>
