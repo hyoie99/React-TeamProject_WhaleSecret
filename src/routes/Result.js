@@ -11,7 +11,9 @@ function Result() {
     const textArea = document.createElement("textarea");
     document.body.appendChild(textArea);
 
-    textArea.value = window.location.href;
+    textArea.value =
+      window.location.origin +
+      "/React-Teamproject_WhaleSecret/ghost_page/translate/guide";
     textArea.select();
 
     document.execCommand("copy");
