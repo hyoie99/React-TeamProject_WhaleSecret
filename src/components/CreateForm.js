@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "../css/createform_style.module.css";
 
 function CreateForm({ setLoding, getName, getText }) {
@@ -45,10 +46,12 @@ function CreateForm({ setLoding, getName, getText }) {
           ></textarea>
         </div>
         <div className={styles.btns}>
-          <button type="button" className={styles.btn_back}>
-            뒤로 가기
-          </button>
-          {/* <span className={styles.btn_back}>뒤로 가기</span> */}
+          <Link to="/ghost_page/explain">
+            <button type="button" className={styles.btn_back}>
+              뒤로 가기
+            </button>
+            {/* <span className={styles.btn_back}>뒤로 가기</span> */}
+          </Link>
           <button onClick={clickTrans} className={styles.btn_trans}>
             변환 하기
           </button>
