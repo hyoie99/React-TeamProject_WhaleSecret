@@ -1,7 +1,7 @@
 import { useState } from "react";
 import CreateForm from "../components/CreateForm";
 import Loading from "../components/Loading";
-import styles from "../css/create_style.module.css";
+import bg from "../css/bg_style.module.css";
 
 function Create() {
   const [loading, setLoading] = useState(false);
@@ -26,9 +26,12 @@ function Create() {
       {loading ? (
         <Loading username={username} usertext={usertext} />
       ) : (
-        <form onSubmit={clickTrans} className={styles.form_div}>
-          <CreateForm getName={getName} getText={getText} />
-          <button>변환</button>
+        <form onSubmit={clickTrans} className={bg.main_page}>
+          <CreateForm
+            setLoading={setLoading}
+            getName={getName}
+            getText={getText}
+          />
         </form>
       )}
     </div>
