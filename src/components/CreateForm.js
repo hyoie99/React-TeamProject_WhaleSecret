@@ -18,6 +18,15 @@ function CreateForm({ setLoding, getName, getText }) {
   const clickTrans = () => {
     setLoding(true);
   };
+  const onlyKr = (event) => {
+    const keyCode = event.keyCode;
+    // console.log(keyCode);
+    const isValid = keyCode >= 65 && keyCode <= 90;
+    if (isValid) {
+      event.preventDefault();
+      return false;
+    }
+  };
 
   return (
     <div className={styles.main_page}>
@@ -30,6 +39,7 @@ function CreateForm({ setLoding, getName, getText }) {
             required
             className={styles.input_name}
             type="text"
+            maxLength="10"
           ></input>
         </div>
         <div className={styles.msg_input_div}>
@@ -39,6 +49,7 @@ function CreateForm({ setLoding, getName, getText }) {
           <textarea
             value={text}
             onChange={inputText}
+            onKeyDown={onlyKr}
             required
             className={styles.input_msg}
             type="text"
