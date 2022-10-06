@@ -38,7 +38,7 @@ function Result() {
       height: card.offsetHeight,
       scale: 1,
     }).then((canvas) => {
-      saveFile(canvas.toDataURL(), "card.jpg");
+      saveFile(canvas.toDataURL(), "card.png");
       card.style.animation = card_animation;
     });
   };
