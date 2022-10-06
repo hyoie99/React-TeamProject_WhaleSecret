@@ -25,9 +25,9 @@ function SecretHome() {
             />
             <Link to="/ghost_page" target="_blank">
               <div className={bubbleClassName}>
-                <span className={styles.main_whale_bubble_text}>
-                  고민 있어?
-                </span>
+                <p className={styles.main_whale_bubble_text}>
+                  안녕! <br />내 이야기 한 번 들어볼래?
+                </p>
               </div>
             </Link>
           </div>
