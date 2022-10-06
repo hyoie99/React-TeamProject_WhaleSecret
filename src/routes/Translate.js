@@ -11,7 +11,7 @@ function Translate() {
     textArea.select();
 
     document.execCommand("copy");
-    alert("주소 복사 완료");
+    alert("링크가 복사되었습니다.");
     document.body.removeChild(textArea);
   };
   return (

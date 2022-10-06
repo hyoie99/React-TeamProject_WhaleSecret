@@ -7,6 +7,17 @@ function Result() {
   const username = location.state.username.username;
   const usertext = location.state.usertext.usertext;
 
+  const copyShare = () => {
+    const textArea = document.createElement("textarea");
+    document.body.appendChild(textArea);
+
+    textArea.value = window.location.href;
+    textArea.select();
+
+    document.execCommand("copy");
+    alert("링크가 복사되었습니다.");
+    document.body.removeChild(textArea);
+  };
   const saveFile = (url, filename) => {
     let link = document.createElement("a");
     link.href = url;
@@ -17,7 +28,9 @@ function Result() {
     document.body.removeChild(link);
   };
   const captureImg = (event) => {
-    const card = event.target.parentNode.parentNode.parentNode.childNodes[0];
+    const card =
+      event.target.parentNode.parentNode.parentNode.parentNode.childNodes[0];
+    // console.log(card);
     const card_animation = card.style.animation;
     card.style.setProperty("animation", "none");
     html2canvas(card, {
@@ -43,35 +56,57 @@ function Result() {
 
   return (
     <div className={styles.main_page}>
-      <div className={styles.flex_div}>
-        <div className={styles.whale_div}>
-          <p className={styles.whale_text}>고스부호 변환 끝</p>
+      <div className={styles.card_btn_div}>
+        <div className={styles.card_div}>
+          <h1 className={styles.card_title}>
+            {username}님의 <br />
+            고스부호 메시지 카드
+          </h1>
+          <p className={styles.card_text}>{usertext}</p>
           <img
             className={styles.main_whale_img}
             alt=""
             src={require("../Img/ghost_whale.png")}
           />
+          <img
+            className={styles.sub_whale_img}
+            alt=""
+            src={require("../Img/whale_card.png")}
+          />
         </div>
-        <div className={styles.card_btn_div}>
-          <div className={styles.card_div}>
-            <h1 className={styles.card_title}>{username}님의 비밀 메시지</h1>
-            <p className={styles.card_text}>{usertext}</p>
-            {/* 이미지 변경 예정 */}
-            <img
-              className={styles.main_whale_img2}
-              alt=""
-              src={require("../Img/ghost_whale.png")}
-            />
-          </div>
-          <div className={styles.btns}>
-            <div className={styles.btns_group1}>
-              <button onClick={captureImg}>이미지 저장하기</button>
-              <button>링크 공유하기</button>
+        <div className={styles.btns}>
+          <div className={styles.btns_group1}>
+            <div>
+              <button onClick={copyShare} className={styles.btn_share}>
+                <img
+                  className={styles.btn_icon}
+                  alt=""
+                  src={require("../Img/btn_share.png")}
+                />
+                가이드 링크 공유
+              </button>
             </div>
-            <Link to="/ghost_page">
-              <button>다시 하기</button>
-            </Link>
+            <div>
+              <button className={styles.btn_download} onClick={captureImg}>
+                <img
+                  className={styles.btn_icon}
+                  alt=""
+                  src={require("../Img/btn_download.png")}
+                />
+                이미지 저장
+              </button>
+            </div>
           </div>
+          <Link to="/ghost_page/create">
+            <button className={styles.btn_again}>
+              <img
+                className={styles.btn_icon}
+                alt=""
+                src={require("../Img/btn_again.png")}
+              />
+              다시 하기
+            </button>
+          </Link>
         </div>
       </div>
     </div>
