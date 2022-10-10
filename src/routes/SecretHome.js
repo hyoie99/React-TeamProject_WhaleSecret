@@ -6,10 +6,18 @@ import bg from "../css/bg_style.module.css";
 function SecretHome() {
   const [bubble, setBubble] = useState(false);
   const [bubbleClassName, setBubbleClass] = useState(styles.first_hidden);
+  const [toggle, setToggle] = useState(styles.cookie_toggle_no);
 
   const showBubble = () => {
     setBubble(!bubble);
     setBubbleClass(bubble ? styles.next_hidden : styles.main_whale_bubble);
+  };
+  const clickToggle = () => {
+    if (toggle === styles.cookie_toggle_no) {
+      setToggle(styles.cookie_toggle_yes);
+    } else {
+      setToggle(styles.cookie_toggle_no);
+    }
   };
 
   return (
@@ -53,6 +61,21 @@ function SecretHome() {
                 북마크, 아이디와 비밀번호, 다운로드 목록
               </p>
             </div>
+          </div>
+          <div className={styles.main_cookie}>
+            <div className={styles.cookie_div}>
+              <p className={styles.main_info_title}>타사 쿠키 차단</p>
+              {/* <div className={styles.cookie_toggle}> */}
+              <label onClick={clickToggle} className={toggle}>
+                <span className={styles.toggle_btn}></span>
+              </label>
+              {/* </div> */}
+            </div>
+            <p className={styles.main_info_des}>
+              이 옵션을 사용 설정하면 사이트가 웹 전반에서 사용자를 추적하는
+              쿠키를 사용할 수 없습니다. 일부 사이트에서는 이 기능이 작동하지
+              않을 수 있습니다.
+            </p>
           </div>
         </div>
       </div>
