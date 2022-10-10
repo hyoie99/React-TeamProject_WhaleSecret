@@ -49,8 +49,10 @@
   border: 1px solid #e3e3e3;
   border-radius: 10px;
   /* padding: 30px; */
-  height: 550px;
-  width: 400px;
+  /* height: 550px;
+  width: 400px; */
+  height: 500px;
+  width: 350px;
   padding: 20px 35px 20px 35px;
 
   /* height: 100%; */
@@ -71,7 +73,8 @@
   font-size: 36px;
   width: 400px;
   word-break: break-all;
-  padding: 0 35px;
+  /* padding: 0 35px; */
+  padding: 0 40px;
   text-align: center;
   font-family: "Black And White Picture", sans-serif;
   user-select: none;
