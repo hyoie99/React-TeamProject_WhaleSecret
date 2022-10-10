@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/React-Teamproject_WhaleSecret/static/css/main.18488f66.css",
-    "main.js": "/React-Teamproject_WhaleSecret/static/js/main.fb85eba1.js",
+    "main.css": "/React-Teamproject_WhaleSecret/static/css/main.5c42fc8f.css",
+    "main.js": "/React-Teamproject_WhaleSecret/static/js/main.8afc0e67.js",
+    "static/media/guide_card.png": "/React-Teamproject_WhaleSecret/static/media/guide_card.f4f522c51311627795bf.png",
+    "static/media/loading.gif": "/React-Teamproject_WhaleSecret/static/media/loading.c1b8565f12c3c976ba01.gif",
     "static/media/background.png": "/React-Teamproject_WhaleSecret/static/media/background.3ab9e6de0b2adeb58238.png",
     "static/media/ghost_whale.png": "/React-Teamproject_WhaleSecret/static/media/ghost_whale.8c43d1857cf34b87434a.png",
     "static/media/background_card.png": "/React-Teamproject_WhaleSecret/static/media/background_card.0f60c074d197e25d73c3.png",
     "static/media/ghost_whale2.png": "/React-Teamproject_WhaleSecret/static/media/ghost_whale2.3ea152497f089d5646b6.png",
     "index.html": "/React-Teamproject_WhaleSecret/index.html",
-    "main.18488f66.css.map": "/React-Teamproject_WhaleSecret/static/css/main.18488f66.css.map",
-    "main.fb85eba1.js.map": "/React-Teamproject_WhaleSecret/static/js/main.fb85eba1.js.map"
+    "main.5c42fc8f.css.map": "/React-Teamproject_WhaleSecret/static/css/main.5c42fc8f.css.map",
+    "main.8afc0e67.js.map": "/React-Teamproject_WhaleSecret/static/js/main.8afc0e67.js.map"
   },
   "entrypoints": [
-    "static/css/main.18488f66.css",
-    "static/js/main.fb85eba1.js"
+    "static/css/main.5c42fc8f.css",
+    "static/js/main.8afc0e67.js"
   ]
 }
