@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap");
 
 .main_div {
@@ -90,6 +91,7 @@
   color: #d8d8d8;
   background-color: transparent;
   cursor: pointer;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .btn_next {
   font-weight: bold;
@@ -102,4 +104,5 @@
   color: #202020;
   background-color: #d8d8d8;
   cursor: pointer;
+  font-family: "Noto Sans KR", sans-serif;
 }

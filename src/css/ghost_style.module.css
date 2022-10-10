@@ -86,6 +86,7 @@
   background-color: transparent;
   padding: 15px 20px;
   cursor: pointer;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .btn_make {
@@ -98,6 +99,7 @@
   border-radius: 30px;
   padding: 15px 20px;
   cursor: pointer;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 @keyframes move_whale {

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap");
 
 .main_div {
@@ -101,6 +102,7 @@
   border-radius: 25px;
   padding: 10px;
   cursor: pointer;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .btn_share {
   font-size: 20px;
@@ -112,6 +114,7 @@
   border-radius: 25px;
   padding: 10px;
   cursor: pointer;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 @keyframes move_whale {

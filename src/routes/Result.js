@@ -99,7 +99,7 @@ function Result() {
               </button>
             </div>
           </div>
-          <Link to="/ghost_page/create">
+          <Link to="/ghost_page/create" style={{ textDecoration: "none" }}>
             <button className={styles.btn_again}>
               <img
                 className={styles.btn_icon}

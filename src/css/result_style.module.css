@@ -96,7 +96,7 @@
   padding-bottom: 30px;
 }
 .btn_icon {
-  width: 25px;
+  width: 28px;
   padding-right: 10px;
 }
 .btn_share {
@@ -109,10 +109,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  align-items: center;
 
   font-size: 18px;
   color: #d9d9d9;
   cursor: pointer;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .btn_download {
   height: 55px;
@@ -124,18 +126,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  align-items: center;
 
   font-size: 18px;
   color: #202020;
   cursor: pointer;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .btn_again {
+  height: auto;
   background-color: transparent;
   border: none;
 
   font-size: 18px;
   color: #d9d9d9;
   cursor: pointer;
+  font-family: "Noto Sans KR", sans-serif;
+
+  display: flex;
+  align-items: center;
 }
 
 @keyframes move_whale {
