@@ -24,6 +24,7 @@ function CreateForm({ setLoding, getName, getText }) {
     const isValid = keyCode >= 65 && keyCode <= 90;
     if (isValid) {
       event.preventDefault();
+      alert("영어는 변환할 수 없습니다.");
       return false;
     }
   };
