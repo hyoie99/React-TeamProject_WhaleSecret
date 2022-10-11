@@ -60,12 +60,20 @@ function Result() {
     <div className={styles.main_page}>
       <div className={styles.card_btn_div}>
         <div className={styles.card_div}>
-          <h1 className={styles.card_title}>
-            {username}님의 <br />
-            고스부호 메시지 카드
-          </h1>
-          <p className={styles.card_text}>{usertext}</p>
+          <div className={styles.card_text_div}>
+            <h1 className={styles.card_title}>
+              <span className={styles.card_title_user}>{username}</span> 님의
+              <br />
+              고스부호 메시지 카드
+            </h1>
+            <p className={styles.card_text}>{usertext}</p>
+          </div>
           <img
+            className={styles.result_logo}
+            src={require("../Img/bg_result_logo.png")}
+            alt=""
+          />
+          {/* <img
             className={styles.main_whale_img}
             alt=""
             src={require("../Img/ghost_whale.png")}
@@ -74,7 +82,7 @@ function Result() {
             className={styles.sub_whale_img}
             alt=""
             src={require("../Img/whale_card.png")}
-          />
+          /> */}
         </div>
         <div className={styles.btns}>
           <div className={styles.btns_group1}>

@@ -26,6 +26,7 @@
   height: 100vh;
   font-family: "ghost";
   font-size: 18px;
+  /* line-height: 80%; */
   background-color: #202020;
   background-image: url("../Img/background.png");
   background-size: 90%;

@@ -6,9 +6,9 @@ function Explain() {
   return (
     <div className={bg.main_page}>
       <div className={styles.main_div}>
-        <h1 className={styles.main_title}>고스부호</h1>
+        {/* <h1 className={styles.main_title}>고스부호</h1> */}
         <div className={styles.explain_card_div}>
-          <div className={styles.explain_card}>
+          {/* <div className={styles.explain_card}>
             <h3 className={styles.card_title}> 바꾸고 싶은 내용 </h3>
             <p className={styles.card_text1}>
               {" "}
@@ -45,17 +45,22 @@ function Explain() {
               {" "}
               나 오늘 <br /> 로또 당첨됐다.{" "}
             </p>
-          </div>
+          </div> */}
+          <div className={styles.ex_card1}></div>
+          <div className={styles.ex_card2}></div>
         </div>
-        <p className={styles.explain_text}>
-          고스부호는 글자의 초성을 특별한 암호로 바꿔줘. <br /> 우리끼리만
-          알아볼 수 있는 고스부호로 비밀을 전해봐!
-        </p>
-        <img
-          className={styles.ghost_whale_img}
-          alt=""
-          src={require("../Img/ghost_whale.png")}
-        />
+        <div className={styles.explain_div}>
+          <img
+            className={styles.ghost_whale_img}
+            alt=""
+            src={require("../Img/ghost_whale.png")}
+          />
+          <p className={styles.explain_text}>
+            고스부호는 글자의 초성을 특별한 암호로 바꿔줘. <br /> 우리끼리만
+            알아볼 수 있는 고스부호로 비밀을 전해봐!
+          </p>
+        </div>
+
         <div className={styles.btns}>
           <Link to="/ghost_page">
             <button className={styles.btn_back}>뒤로 가기</button>
