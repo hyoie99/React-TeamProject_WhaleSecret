@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@font-face {
+  font-family: "ghost";
+  src: url("../fonts/ghost.woff") format("woff");
+}
 
 * {
   margin: 0 !important;
@@ -10,6 +14,18 @@
   width: 100vw;
   height: 100vh;
   font-family: "Noto Sans KR", sans-serif;
+  background-color: #202020;
+  background-image: url("../Img/background.png");
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.change_main {
+  width: 100vw;
+  height: 100vh;
+  font-family: "ghost";
+  font-size: 18px;
   background-color: #202020;
   background-image: url("../Img/background.png");
   background-size: 90%;

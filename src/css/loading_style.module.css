@@ -9,8 +9,11 @@
 }
 
 .main_whale_img {
-  width: 100px;
+  width: 500px;
   /* animation: move_whale 4s infinite linear; */
+}
+.loading_video {
+  width: 500px;
 }
 
 .title {

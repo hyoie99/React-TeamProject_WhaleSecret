@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import ReactPlayer from "react-player";
+import loadingVideo from "../video/loading2.mp4";
 import styles from "../css/loading_style.module.css";
 import bg from "../css/bg_style.module.css";
 
@@ -10,9 +12,9 @@ function Loading({ username, usertext }) {
       navigate("/ghost_page/result", {
         state: { username: { username }, usertext: { usertext } },
       });
-    }, 1500);
+    }, 2500);
   };
-  // console.log(username, usertext);
+  console.log(username, usertext);
 
   useEffect(() => {
     timeout();
@@ -28,10 +30,17 @@ function Loading({ username, usertext }) {
         <div className={styles.circle}></div>
       </div> */}
       <div className={styles.main_div}>
-        <img
+        {/* <img
           className={styles.main_whale_img}
           alt=""
-          src={require("../Img/ghost_whale.png")}
+          // src={require("../Img/ghost_whale.png")}
+          src={require("../Img/loading2.gif")}
+        /> */}
+        <ReactPlayer
+          className={styles.loading_video}
+          url={loadingVideo}
+          playing
+          muted
         />
       </div>
     </div>

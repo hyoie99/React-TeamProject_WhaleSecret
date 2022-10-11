@@ -19,7 +19,7 @@ function Translate() {
   return (
     <div className={bg.main_page}>
       <div className={styles.main_div}>
-        <div className={styles.guide_div}>
+        {/* <div className={styles.guide_div}>
           <h1 className={styles.guide_title}>고스부호 해석 가이드</h1>
           <div className={styles.guide_text}>
             <span className={styles.origin}>ㄱ = </span>{" "}
@@ -60,7 +60,8 @@ function Translate() {
             alt=""
             src={require("../Img/ghost_whale2.png")}
           ></img>
-        </div>
+        </div> */}
+        <div className={styles.guide_div}></div>
         <div className={styles.btns_div}>
           <Link to="/ghost_page">
             <button className={styles.btn_back}>뒤로 가기</button>

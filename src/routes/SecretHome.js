@@ -7,10 +7,14 @@ function SecretHome() {
   const [bubble, setBubble] = useState(false);
   const [bubbleClassName, setBubbleClass] = useState(styles.first_hidden);
   const [toggle, setToggle] = useState(styles.cookie_toggle_no);
+  const [toggleClassName, setClassName] = useState(bg.main_page);
+  const [secretTitle, setTitle] = useState("시크릿모드로 전환됨");
 
   const showBubble = () => {
     setBubble(!bubble);
     setBubbleClass(bubble ? styles.next_hidden : styles.main_whale_bubble);
+    setClassName(bubble ? bg.main_page : bg.change_main);
+    setTitle(bubble ? "시크릿모드로 전환됨" : "고스부호로 변환됨");
   };
   const clickToggle = () => {
     if (toggle === styles.cookie_toggle_no) {
@@ -22,7 +26,7 @@ function SecretHome() {
 
   return (
     <div className="App">
-      <div className={bg.main_page}>
+      <div className={toggleClassName}>
         <div className={styles.main_div}>
           <div className={styles.main_whale}>
             <img
@@ -39,7 +43,7 @@ function SecretHome() {
               </div>
             </Link>
           </div>
-          <h1 className={styles.main_title}>시크릿모드로 전환됨</h1>
+          <h1 className={styles.main_title}>{secretTitle}</h1>
 
           <p className={styles.main_description}>
             시크릿 탭을 모두 닫으면 시크릿 탭에서 보는 페이지는 브라우저의 방문
