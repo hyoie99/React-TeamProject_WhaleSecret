@@ -51,6 +51,8 @@
   background-position: center;
   width: 28%;
   height: 72%;
+  /* width: 450px;
+  height: 675px; */
   animation: rotate_card 9s infinite linear;
 }
 .card_text_div {

@@ -11,7 +11,7 @@
 }
 
 .main_div {
-  /* width: 100%; */
+  width: 100%;
   height: 95%;
 
   display: flex;
@@ -22,8 +22,8 @@
 .input_div {
   /* width: 800px;
   height: 555px; */
-  width: 58vw;
-  height: 70.5vh;
+  width: 57%;
+  height: 73%;
   background-image: url("../Img/bg_input.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -100,7 +100,7 @@
 
 .ghost_whale_div {
   /* background-color: violet; */
-  width: 54%;
+  width: 31.5%;
   height: 23%;
 
   display: flex;

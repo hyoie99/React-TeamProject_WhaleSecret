@@ -28,8 +28,8 @@
   background-image: url("../Img/guide_card.png");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 32vw;
-  height: 82vh;
+  width: 33%;
+  height: 85%;
 }
 
 .guide_title {

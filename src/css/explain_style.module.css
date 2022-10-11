@@ -18,21 +18,22 @@
 
 .explain_card_div {
   /* background-color: blue; */
-  width: 52%;
+  width: 56%;
+  height: 73%;
   display: flex;
   justify-content: space-between;
   padding-bottom: 25px;
 }
 .ex_card1 {
-  width: 25vw;
-  height: 65vh;
+  width: 48%;
+  height: 100%;
   background-image: url("../Img/ex_card1.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .ex_card2 {
-  width: 25vw;
-  height: 65vh;
+  width: 48%;
+  height: 100%;
   background-image: url("../Img/ex_card2.png");
   background-repeat: no-repeat;
   background-size: cover;
