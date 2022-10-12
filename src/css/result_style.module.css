@@ -80,7 +80,8 @@
   font-size: 36px;
   width: 400px;
   height: 243px;
-  word-break: keep-all;
+  word-break: break-word;
+  word-wrap: break-word;
   line-height: 130%;
   text-align: center;
 
