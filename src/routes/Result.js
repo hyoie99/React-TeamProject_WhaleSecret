@@ -68,11 +68,11 @@ function Result() {
             </h1>
             <p className={styles.card_text}>{usertext}</p>
           </div>
-          <img
+          {/* <img
             className={styles.result_logo}
             src={require("../Img/bg_result_logo.png")}
             alt=""
-          />
+          /> */}
           {/* <img
             className={styles.main_whale_img}
             alt=""

@@ -47,7 +47,8 @@
   position: relative;
   background-color: #151415;
   /* background-color: transparent; */
-  background-image: url("../Img/bg_result.png");
+  /* background-image: url("../Img/bg_result.png"); */
+  background-image: url("../Img/result_card.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
