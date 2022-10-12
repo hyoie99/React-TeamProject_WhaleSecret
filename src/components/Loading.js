@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import ReactPlayer from "react-player";
-import loadingVideo from "../video/loading2.mp4";
+import loadingVideo from "../video/loading.mp4";
 import styles from "../css/loading_style.module.css";
-import bg from "../css/bg_style.module.css";
+// import bg from "../css/bg_style.module.css";
 
 function Loading({ username, usertext }) {
   const navigate = useNavigate();
@@ -12,7 +12,7 @@ function Loading({ username, usertext }) {
       navigate("/ghost_page/result", {
         state: { username: { username }, usertext: { usertext } },
       });
-    }, 2500);
+    }, 8000);
   };
   // console.log(username, usertext);
 
@@ -24,7 +24,7 @@ function Loading({ username, usertext }) {
   });
 
   return (
-    <div className={bg.main_page}>
+    <div className={styles.main_page}>
       {/* <div>
         <h1 className={styles.title}>LOADING</h1>
         <div className={styles.circle}></div>
