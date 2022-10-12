@@ -49,8 +49,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 28%;
-  height: 72%;
+  width: 458px;
+  height: 674.73px;
   /* width: 450px;
   height: 675px; */
   animation: rotate_card 9s infinite linear;
@@ -63,11 +63,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 .card_title {
+  width: 325px;
   font-size: 24px;
   text-align: center;
   color: #d8d8d8;
+  padding-top: 60px;
 }
 .card_title_user {
   font-size: 32px;
@@ -76,10 +79,14 @@
   /* background-color: blue; */
   font-size: 36px;
   width: 400px;
-  word-break: break-all;
-  /* padding: 0 35px; */
-  padding: 0 40px;
+  height: 243px;
+  word-break: keep-all;
+  line-height: 130%;
   text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "ghost";
   user-select: none;
   color: #d8d8d8;
@@ -95,7 +102,7 @@
 .btns {
   /* background-color: blue; */
   /* height: 70px; */
-  width: 100%;
+  width: 455px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -103,11 +110,11 @@
   /* font-family: "Noto Sans KR", sans-serif; */
 }
 .btns_group1 {
-  width: 32%;
+  width: 100%;
   /* background-color: aqua; */
   display: flex;
   justify-content: space-between;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 .btn_icon {
   width: 28px;

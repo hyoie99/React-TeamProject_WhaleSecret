@@ -38,7 +38,9 @@ function SecretHome() {
             <Link to="/ghost_page" target="_blank">
               <div className={bubbleClassName}>
                 <p className={styles.main_whale_bubble_text}>
-                  안녕! <br />내 이야기 한 번 들어볼래?
+                  비밀 유지를 위해, 이 페이지는 내가 <br />
+                  고스부호로 바꿔버렸어. <br />
+                  무슨 말인지 궁금하면 클릭해봐!
                 </p>
               </div>
             </Link>

@@ -30,7 +30,7 @@
 
 .first_hidden {
   visibility: hidden;
-  width: 230px;
+  width: 300px;
   position: absolute;
   top: -30px;
   left: 140px;
@@ -38,7 +38,7 @@
 
 .next_hidden {
   opacity: 0;
-  width: 230px;
+  width: 300px;
   position: absolute;
   top: -30px;
   left: 140px;
@@ -47,7 +47,7 @@
 
 .main_whale_bubble {
   /* opacity: 0; */
-  width: 230px;
+  width: 300px;
   /* padding: 20px; */
   position: absolute;
   top: -30px;
