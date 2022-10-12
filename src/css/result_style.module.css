@@ -45,8 +45,8 @@
 
 .card_div {
   position: relative;
-  /* background-color: #202020; */
-  background-color: transparent;
+  background-color: #151415;
+  /* background-color: transparent; */
   background-image: url("../Img/bg_result.png");
   background-repeat: no-repeat;
   background-size: cover;
