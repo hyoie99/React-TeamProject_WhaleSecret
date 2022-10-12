@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import ReactPlayer from "react-player";
-import loadingVideo from "../video/loading.mp4";
+import loadingVideo from "../video/loading3.mp4";
 import styles from "../css/loading_style.module.css";
 // import bg from "../css/bg_style.module.css";
 
@@ -12,9 +12,8 @@ function Loading({ username, usertext }) {
       navigate("/ghost_page/result", {
         state: { username: { username }, usertext: { usertext } },
       });
-    }, 8000);
+    }, 7000);
   };
-  // console.log(username, usertext);
 
   useEffect(() => {
     timeout();
@@ -41,6 +40,8 @@ function Loading({ username, usertext }) {
           url={loadingVideo}
           playing
           muted
+          width="1280px"
+          height="720px"
         />
       </div>
     </div>
