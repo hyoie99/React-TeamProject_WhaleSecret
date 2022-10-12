@@ -62,7 +62,7 @@ function Result() {
         <div className={styles.card_div}>
           <div className={styles.card_text_div}>
             <h1 className={styles.card_title}>
-              <span className={styles.card_title_user}>{username}</span> 님의
+              {username} 님의
               <br />
               고스부호 메시지 카드
             </h1>
