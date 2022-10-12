@@ -14,7 +14,7 @@ function Loading({ username, usertext }) {
       });
     }, 2500);
   };
-  console.log(username, usertext);
+  // console.log(username, usertext);
 
   useEffect(() => {
     timeout();

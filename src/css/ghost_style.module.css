@@ -37,7 +37,7 @@
   color: #151515;
   border: #e3e3e3 solid 1.5px;
   background-color: #d8d8d8;
-  border-radius: 20% / 50%;
+  border-radius: 10px;
   padding: 30px 90px;
   /* z-index: 2; */
 }
