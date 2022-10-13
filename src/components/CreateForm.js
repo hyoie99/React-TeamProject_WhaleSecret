@@ -20,7 +20,6 @@ function CreateForm({ setLoding, getName, getText }) {
   };
   const onlyKr = (event) => {
     const keyCode = event.keyCode;
-    // console.log(keyCode);
     const isValid = keyCode >= 65 && keyCode <= 90;
     if (isValid) {
       event.preventDefault();
@@ -63,12 +62,10 @@ function CreateForm({ setLoding, getName, getText }) {
               <button type="button" className={styles.btn_back}>
                 뒤로 가기
               </button>
-              {/* <span className={styles.btn_back}>뒤로 가기</span> */}
             </Link>
             <button onClick={clickTrans} className={styles.btn_trans}>
               변환 하기
             </button>
-            {/* <span className={styles.btn_trans}>변환 하기</span> */}
           </div>
         </div>
         <div className={styles.ghost_whale_div}>

@@ -71,11 +71,9 @@ function SecretHome() {
           <div className={styles.main_cookie}>
             <div className={styles.cookie_div}>
               <p className={styles.main_info_title}>타사 쿠키 차단</p>
-              {/* <div className={styles.cookie_toggle}> */}
               <label onClick={clickToggle} className={toggle}>
                 <span className={styles.toggle_btn}></span>
               </label>
-              {/* </div> */}
             </div>
             <p className={styles.main_info_des}>
               이 옵션을 사용 설정하면 사이트가 웹 전반에서 사용자를 추적하는

@@ -32,7 +32,6 @@ function Result() {
   const captureImg = (event) => {
     const card =
       event.target.parentNode.parentNode.parentNode.parentNode.childNodes[0];
-    // console.log(card);
     const card_animation = card.style.animation;
     card.style.setProperty("animation", "none");
     html2canvas(card, {
@@ -44,17 +43,6 @@ function Result() {
       card.style.animation = card_animation;
     });
   };
-  // const captureImg = (event) => {
-  //   const card = event.target.parentNode.parentNode.parentNode.childNodes[0];
-  //   card.style.animation = "";
-  //   domtoimage.toBlob(card).then((blob) => {
-  //     saveAs(blob, "card.png");
-  //   });
-  //   card.style.animation = "rotate_card 9s infinite linear";
-  //   setTimeout(function () {
-  //     window.location.reload();
-  //   }, 500);
-  // };
 
   return (
     <div className={styles.main_page}>
@@ -68,21 +56,6 @@ function Result() {
             </h1>
             <p className={styles.card_text}>{usertext}</p>
           </div>
-          {/* <img
-            className={styles.result_logo}
-            src={require("../Img/bg_result_logo.png")}
-            alt=""
-          /> */}
-          {/* <img
-            className={styles.main_whale_img}
-            alt=""
-            src={require("../Img/ghost_whale.png")}
-          />
-          <img
-            className={styles.sub_whale_img}
-            alt=""
-            src={require("../Img/whale_card.png")}
-          /> */}
         </div>
         <div className={styles.btns}>
           <div className={styles.btns_group1}>

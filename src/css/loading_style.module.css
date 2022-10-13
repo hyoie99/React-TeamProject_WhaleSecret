@@ -1,13 +1,11 @@
 * {
   margin: 0 !important;
   box-sizing: border-box;
-  /* padding: 0 !important; */
 }
 
 .main_page {
   width: 100vw;
   height: 100vh;
-  /* background-color: #202020; */
   background-color: #151415;
 }
 
@@ -16,60 +14,6 @@
   height: 100%;
 
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
-}
-
-.main_whale_img {
-  width: 500px;
-  /* animation: move_whale 4s infinite linear; */
-}
-.loading_video {
-  /* width: 1500px; */
-}
-
-.title {
-  position: fixed;
-  top: 37%;
-  left: 43%;
-
-  color: white;
-  padding-bottom: 20px;
-  font-size: 50px;
-}
-
-.circle {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-
-  width: 50px;
-  height: 50px;
-  border: 7px solid white;
-  border-top: 7px solid rgb(0, 174, 255);
-  border-radius: 50%;
-  animation: spin_circle 0.8s infinite linear;
-}
-
-@keyframes spin_circle {
-  from {
-    transform: translate(-50%, -50%) rotate(0);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-
-@keyframes move_whale {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  33% {
-    transform: translateY(-4px);
-  }
-  85% {
-    transform: translateY(2px);
-  }
 }

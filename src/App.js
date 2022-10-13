@@ -1,5 +1,4 @@
 import * as React from "react";
-// import * as ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import SecretHome from "./routes/SecretHome";
@@ -11,10 +10,8 @@ import Result from "./routes/Result";
 import SharedGuide from "./routes/SharedGuide";
 
 function App() {
-  // return <SecretHome />;
   return (
     <BrowserRouter basename="/React-Teamproject_WhaleSecret">
-      {/* <BrowserRouter> */}
       <Routes>
         <Route path="/" element={<SecretHome />}></Route>
         <Route path="/ghost_page" element={<Ghost />}></Route>

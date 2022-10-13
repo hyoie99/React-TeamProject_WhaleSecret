@@ -6,34 +6,19 @@
 
 * {
   margin: 0 !important;
-  /* padding: 0 !important; */
 }
 
 .main_page {
   width: 100vw;
   height: 100vh;
   font-family: "Noto Sans KR", sans-serif;
-  /* background-color: #202020; */
   background-color: #151415;
 
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-}
-
-.main_whale_img {
-  width: 85px;
-  /* animation: move_whale 4s infinite linear; */
-}
-.sub_whale_img {
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  width: 75px;
 }
 
 .card_btn_div {
-  /* background-color: yellow; */
   width: 100%;
   height: 100%;
 
@@ -46,20 +31,16 @@
 .card_div {
   position: relative;
   background-color: #151415;
-  /* background-color: transparent; */
-  /* background-image: url("../Img/bg_result.png"); */
   background-image: url("../Img/result_card.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 458px;
   height: 674.73px;
-  /* width: 450px;
-  height: 675px; */
   animation: rotate_card 9s infinite linear;
 }
+
 .card_text_div {
-  /* background-color: blue; */
   width: 100%;
   height: 68%;
 
@@ -75,11 +56,7 @@
   color: #d8d8d8;
   padding-top: 60px;
 }
-.card_title_user {
-  font-size: 32px;
-}
 .card_text {
-  /* background-color: blue; */
   font-size: 36px;
   width: 400px;
   height: 243px;
@@ -95,27 +72,16 @@
   user-select: none;
   color: #d8d8d8;
 }
-.result_logo {
-  width: 135px;
-  position: absolute;
-  left: 50%;
-  bottom: 7%;
-  transform: translateX(-50%);
-}
 
 .btns {
-  /* background-color: blue; */
-  /* height: 70px; */
   width: 455px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* font-family: "Noto Sans KR", sans-serif; */
 }
 .btns_group1 {
   width: 100%;
-  /* background-color: aqua; */
   display: flex;
   justify-content: space-between;
   padding-bottom: 50px;
@@ -170,19 +136,6 @@
 
   display: flex;
   align-items: center;
-}
-
-@keyframes move_whale {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  33% {
-    transform: translateY(-4px);
-  }
-  85% {
-    transform: translateY(2px);
-  }
 }
 
 @keyframes rotate_card {

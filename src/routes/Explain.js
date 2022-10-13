@@ -6,46 +6,7 @@ function Explain() {
   return (
     <div className={bg.main_page}>
       <div className={styles.main_div}>
-        {/* <h1 className={styles.main_title}>고스부호</h1> */}
         <div className={styles.explain_card_div}>
-          {/* <div className={styles.explain_card}>
-            <h3 className={styles.card_title}> 바꾸고 싶은 내용 </h3>
-            <p className={styles.card_text1}>
-              {" "}
-              나 오늘 <br /> 로또 당첨됐다.{" "}
-            </p>
-            <img
-              className={styles.card_arrow}
-              alt=""
-              src={require("../Img/arrow.png")}
-            ></img>
-            <h3 className={styles.card_title}> 고스부호로 변환 </h3>
-            <p className={styles.card_text2}>
-              {" "}
-              나 오늘 <br /> 로또 당첨됐다.{" "}
-            </p>
-          </div>
-          <div className={styles.explain_card}>
-            <h3 className={styles.card_title}> 고스부호 해석 가이드 </h3>
-            <div className={styles.card_text3}>
-              <span> ㄱ = </span>{" "}
-              <span className={styles.card_text4}> ㄱ </span> <br />
-              <span> ㄴ = </span>{" "}
-              <span className={styles.card_text4}> ㄴ </span> <br />
-              <span> ㄷ = </span>{" "}
-              <span className={styles.card_text4}> ㄷ </span>
-            </div>
-            <img
-              className={styles.card_arrow}
-              alt=""
-              src={require("../Img/arrow.png")}
-            ></img>
-            <h3 className={styles.card_title}> 고스부호 해석 </h3>
-            <p className={styles.card_text1}>
-              {" "}
-              나 오늘 <br /> 로또 당첨됐다.{" "}
-            </p>
-          </div> */}
           <div className={styles.ex_card1}></div>
           <div className={styles.ex_card2}></div>
         </div>

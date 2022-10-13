@@ -14,11 +14,9 @@ function Create() {
   };
   const getName = (data) => {
     setUsername(data);
-    // console.log(username);
   };
   const getText = (data) => {
     setUsertext(data);
-    // console.log(usertext);
   };
 
   return (

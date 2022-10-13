@@ -13,15 +13,12 @@
 
 .main_whale {
   position: relative;
-  /* width: 100%; */
 }
-
 .main_whale_img {
   width: 100px;
   padding-bottom: 30px;
   animation: move_whale 4s infinite linear;
 }
-
 .main_title {
   font-size: 35px;
   padding-bottom: 30px;
@@ -35,7 +32,6 @@
   top: -30px;
   left: 140px;
 }
-
 .next_hidden {
   opacity: 0;
   width: 300px;
@@ -46,15 +42,12 @@
 }
 
 .main_whale_bubble {
-  /* opacity: 0; */
   width: 300px;
-  /* padding: 20px; */
   position: absolute;
   top: -30px;
   left: 140px;
   animation: show_bubble 0.5s linear, move_whale 4s infinite linear;
 }
-
 .main_whale_bubble_text {
   position: relative;
   text-align: center;
@@ -90,7 +83,6 @@
 
   width: 650px;
   display: flex;
-  /* justify-content: space-between; */
 }
 
 .main_info {
@@ -112,7 +104,6 @@
   display: flex;
   justify-content: space-between;
   vertical-align: middle;
-  /* flex-direction: column; */
 }
 .cookie_toggle_no {
   width: 50px;
@@ -176,9 +167,6 @@
   from {
     opacity: 1;
   }
-  /* 50% {
-    opacity: 1;
-  } */
   to {
     opacity: 0;
   }
