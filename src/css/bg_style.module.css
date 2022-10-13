@@ -30,4 +30,5 @@
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: top center;
+  user-select: none;
 }
